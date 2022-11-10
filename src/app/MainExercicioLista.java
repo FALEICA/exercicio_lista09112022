@@ -6,6 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entidade.Pessoa;
+import entidade.Produto;
 
 public class MainExercicioLista {
 
@@ -61,6 +62,10 @@ public class MainExercicioLista {
 		
 		System.out.println("Em qual ID deseja Aumentar o Salario?  ");
 		idFunc = scan.nextInt();
+		
+		Produto produto = new Produto("Note Book Samsung");
+		produto.showMsgProd();
+		
 		
 		
 		
