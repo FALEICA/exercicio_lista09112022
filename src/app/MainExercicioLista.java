@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
-
+import entidade.Maquina;
 import entidade.Pessoa;
 import entidade.Produto;
 
@@ -28,6 +28,17 @@ public class MainExercicioLista {
 		scan.nextLine();
 		
 		List<String> list = new ArrayList<>();
+		
+		Produto produto = new Produto("Note Book Samsung");
+		produto.showMsgProd();
+		
+		
+		System.out.println("-----------------------------------");
+		System.out.println("\n\n");
+		
+		
+		Maquina maq = new Maquina(1, "FILATORIO", false);
+		maq.estadoDamaquina();
 		
 		
 		for(int i=0;i<totFunc;i++) {
@@ -63,8 +74,7 @@ public class MainExercicioLista {
 		System.out.println("Em qual ID deseja Aumentar o Salario?  ");
 		idFunc = scan.nextInt();
 		
-		Produto produto = new Produto("Note Book Samsung");
-		produto.showMsgProd();
+		
 		
 		
 		
